@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hi this is my web project for begining 
 
 <!--
 **simodani-77/simodani-77** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
