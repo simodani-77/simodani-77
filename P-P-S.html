@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            text-align: center;
+            padding: 40px;
+            color: #333;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .choix h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        span {
+            font-weight: bold;
+            color: #0077ff;
+            animation: scaleUp 0.3s ease-in-out;
+        }
+
+        #resultas {
+            margin: 20px 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #444;
+            animation: blink 1s infinite alternate;
+        }
+
+        .bouttonChoix {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #005dc1;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(0.9); }
+            to { transform: scale(1); }
+        }
+
+        @keyframes blink {
+            from { color: #ff3333; }
+            to { color: #ff9999; }
+        }
+    </style>
+</head>
+<body>
+    <section>
+       <div class="choix">
+        <h4>vous <span id="choix_ytilisateur"></span></h4>
+        <h4>ordinateur <span id="choix_ordinatuer"></span></h4>
+       </div>
+        <div id="resultas">Resultas!</div>
+       <div class="bouttonChoix">
+        <button id="piere">piere</button>
+        <button id="papier">papier</button>
+        <button id="sizeaux">sizeaux</button>
+       </div>
+    </section>
+    <script src="P-P-S.js" ></script>
+</body>
+</html>
